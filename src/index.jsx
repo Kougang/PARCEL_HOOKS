@@ -132,9 +132,14 @@ function App() {
 render(
   <div>
     <App />
-  </div>,
-  document.getElementById("app")
+  </div>
+  //activer la ligne ci dessous pour avoir un rendu
+  //document.getElementById("app")
 );
+
+//====
+//====LE CODE COMMENTE CI DESSOUS EST FONCTIONNEL, IL SUFFIT DE COMMENTER LE CODE COURANT ET PUIS DE DECOMENTER LE CODE CI DESSOUS POUR AVOIR UN RENDU
+//====
 
 // const useIncrement = (initial, step) => {
 //   const [count, setCount] = useState(initial);

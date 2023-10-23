@@ -12,14 +12,14 @@ function wait(duration) {
 }
 
 const Button = React.memo(function ({ onClick }) {
-  console.log("render");
+  console.log("render ");
   return <button onClick={onClick}>mon bouton </button>;
 });
 
 function App() {
   const [count, setCount] = useState(0);
 
-  // useCallback et useMemo fonctionneraient de la meme maniere, a la difference que useCallback peut se voir etre plus synthetique
+  // useCallback et useMemo fonctionnerent de la meme maniere et atteignent le meme objectif, a la difference que useCallback peut se voir etre plus synthetique
   // useCalback est donc utilise pour eviter des rendus consecutifs
   const handleClick = useCallback(
     function () {
